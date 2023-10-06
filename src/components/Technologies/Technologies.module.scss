@@ -1,0 +1,104 @@
+.tech_block {
+  padding: 45px 103px;
+  background: #f4f7ff;
+  justify-content: space-around;
+  h2 {
+    font-size: 30px;
+    font-weight: 600;
+    font-family: "Inknut Antiqua", serif;
+  }
+  .technologies {
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-around;
+    .technology {
+      gap: 20px;
+      width: 220px;
+      height: 90px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 20px;
+      background: white;
+      p {
+        color: #2b2c34;
+        font-size: 20px;
+        font-family: "Inknut Antiqua", serif;
+      }
+      &:hover {
+        -webkit-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+        -moz-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+        box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
+      }
+    }
+  }
+}
+
+@media (max-width: 1530px) {
+  .tech_block {
+    .technologies {
+      .technology {
+        width: 200px;
+        height: 80px;
+        img {
+          width: 30px;
+          height: 30px;
+        }
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .tech_block {
+    h2 {
+      font-size: 25px;
+    }
+    .technologies {
+      .technology {
+        width: 155px;
+        height: 60px;
+        img {
+          width: 25px;
+          height: 25px;
+        }
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1020px) {
+  .tech_block {
+    .technologies {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 12px;
+      .technology {
+        justify-self: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .tech_block {
+    h2 {
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 340px) {
+  .tech_block {
+    padding: 45px 40px;
+    .technologies {
+      grid-template-columns: 1fr;
+    }
+  }
+}

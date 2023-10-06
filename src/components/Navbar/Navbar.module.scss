@@ -1,0 +1,21 @@
+.navbar {
+  gap: 35px;
+  display: flex;
+  a {
+    color: white;
+    font-size: 18px;
+    font-family: "Inika", serif;
+
+    &:hover {
+      color: #927afb;
+    }
+  }
+}
+
+@media (max-width: 1020px) {
+  .navbar {
+    a {
+      display: none;
+    }
+  }
+}

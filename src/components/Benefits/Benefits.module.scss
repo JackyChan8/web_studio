@@ -1,0 +1,43 @@
+.benefits_block {
+  padding: 45px 103px;
+  h2 {
+    font-size: 30px;
+    font-weight: 600;
+    font-family: "Inknut Antiqua", serif;
+  }
+  .benefits {
+    display: grid;
+    grid-gap: 30px;
+    margin-top: 40px;
+    padding: 0 250px;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 1300px) {
+  .benefits_block {
+    h2 {
+      font-size: 25px;
+    }
+    .benefits {
+        padding: 0;
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .benefits_block {
+    padding: 45px 0px;
+    h2 {
+      text-align: center;
+    }
+  }
+}
+
+// @media (max-width: 460px) {
+//   .benefits_block {
+//     .benefits {
+      
+//     }
+//   }
+// }

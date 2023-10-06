@@ -1,0 +1,149 @@
+.benefit {
+  width: 740px;
+  height: 270px;
+  display: flex;
+  padding: 22px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px -4px 10px -5px rgba(34, 60, 80, 0.6) inset;
+  -moz-box-shadow: 0px -4px 10px -5px rgba(34, 60, 80, 0.6) inset;
+  box-shadow: 0px -4px 10px -5px rgba(34, 60, 80, 0.6) inset;
+  &:nth-child(odd) {
+    justify-self: left;
+  }
+  &:nth-child(even) {
+    justify-self: right;
+  }
+  .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h3 {
+      font-size: 28px;
+      font-weight: 600;
+      font-family: "Inknut Antiqua", serif;
+    }
+    p {
+      color: #728898;
+      font-size: 24px;
+      margin-top: 40px;
+      font-family: "Inter", serif;
+    }
+  }
+  .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      border-radius: 0px 15px 15px 0px;
+    }
+  }
+}
+
+@media (max-width: 1400px) {
+  .benefit {
+    width: 700px;
+    height: 260px;
+    .description {
+      h3 {
+        font-size: 25px;
+      }
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .benefit {
+    &:nth-child(odd) {
+      justify-self: center;
+    }
+    &:nth-child(even) {
+      justify-self: center;
+    }
+  }
+}
+
+@media (max-width: 1220px) {
+  .benefit {
+    width: 640px;
+    height: 240px;
+    .description {
+      h2 {
+        font-size: 22px;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+    .image {
+      img {
+        width: 180px;
+        height: 180px;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .benefit {
+    width: 530px;
+  }
+}
+
+@media (max-width: 600px) {
+  .benefit {
+    width: 430px;
+    height: 220px;
+    .description {
+      h3 {
+        font-size: 19px;
+      }
+      p {
+        font-size: 15px;
+      }
+    }
+    .image {
+      img {
+        width: 130px;
+        height: 130px;
+      }
+    }
+  }
+}
+
+@media (max-width: 460px) {
+  .benefit {
+    display: grid;
+    box-shadow: none;
+    padding: 0px 60px;
+    text-align: center;
+    width: 360px;
+    grid-template-columns: 1fr;
+    .description {
+      order: 2;
+      p {
+        margin-top: 13px;
+      }
+    }
+    .image {
+      order: 1;
+      img {
+        border-radius: 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .benefit {
+    width: 100%;
+    padding: 0px;
+    .description {
+      p {
+        padding: 0 20px;
+      }
+    }
+  }
+}

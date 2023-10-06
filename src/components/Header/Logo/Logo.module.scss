@@ -1,0 +1,22 @@
+.logo_block {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  img {
+    width: 25px;
+  }
+  p {
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: "Inknut Antiqua", serif;
+  }
+}
+
+@media (max-width: 700px) {
+  .logo_block {
+    p {
+      font-size: 20px;
+    }
+  }
+}
